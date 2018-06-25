@@ -1,14 +1,14 @@
 #!/bin/bash
 
-ACCOUNTID=860568815959
-KEYNAME=AKIAJ74PSHZK4GJOFHDA
+ACCOUNTID=############
+KEYNAME=###############
 REGION=us-west-2
 APP_NAME="${ACCOUNTID}-test-webapp"
 DOMAIN="${APP_NAME}.${REGION}.elasticbeanstalk.com"
 PLATFORM=java-8
 ELB_TYPE=classic
-ENVIRONMENT_NAME=dalisch-dev-env
-ENVIRONMENT_CNAME=dalisch-dev
+ENVIRONMENT_NAME=test-webapp-env
+ENVIRONMENT_CNAME="${ACCOUNTID}-test-webapp"
 S3_BUCKET="elasticbeanstalk-${REGION}-${ACCOUNTID}"
 
 # DB Connection
