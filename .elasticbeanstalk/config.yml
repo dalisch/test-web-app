@@ -1,0 +1,22 @@
+branch-defaults:
+  default:
+    environment: dalisch-dev-env
+    group_suffix: null
+deploy:
+  artifact: build/libs/test-web-app-0.1.0.jar
+global:
+  application_name: test-web-app
+  branch: null
+  default_ec2_keyname: AKIAJ74PSHZK4GJOFHDA
+  default_platform: java-8
+  default_region: us-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: null
+  workspace_type: Application
+deploy:
+  artifact: build/libs/test-web-app-0.1.0.jar
