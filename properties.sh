@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ACCOUNTID=860568815959
+KEYNAME=AKIAJ74PSHZK4GJOFHDA
+REGION=us-west-2
+APP_NAME="${ACCOUNTID}-test-webapp"
+DOMAIN="${APP_NAME}.${REGION}.elasticbeanstalk.com"
+PLATFORM=java-8
+ELB_TYPE=classic
+ENVIRONMENT_NAME=dalisch-dev-env
+ENVIRONMENT_CNAME=dalisch-dev
+S3_BUCKET="elasticbeanstalk-${REGION}-${ACCOUNTID}"
+
+# DB Connection
+DATABASE_URL=aa1kzwq36t9nxra.cqzeag3pinrq.us-west-2.rds.amazonaws.com
+DATABASE_PORT=3306
+DATABASE_USERNAME=dbadmin
+DATABASE_PASSWORD=dbpassword
+DATABASE_ENGINE=mysql
