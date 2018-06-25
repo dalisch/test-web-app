@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ACCOUNTID=############
-KEYNAME=###############
+ACCOUNTID=860568815959
+KEYNAME=AKIAJ74PSHZK4GJOFHDA
 REGION=us-west-2
 APP_NAME="${ACCOUNTID}-test-webapp"
 DOMAIN="${APP_NAME}.${REGION}.elasticbeanstalk.com"

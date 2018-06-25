@@ -1,6 +1,9 @@
 branch-defaults:
   default:
-    environment: dalisch-dev-env
+    environment: test-webapp-env
+    group_suffix: null
+  master:
+    environment: test-webapp-env
     group_suffix: null
 deploy:
   artifact: build/libs/test-web-app-0.1.0.jar
@@ -16,5 +19,5 @@ global:
   platform_version: null
   profile: eb-cli
   repository: null
-  sc: null
+  sc: git
   workspace_type: Application

@@ -9,7 +9,8 @@ eb create  "${ENVIRONMENT_NAME}" \
   --database.password "${DATABASE_PASSWORD}" \
   --database.engine "${DATABASE_ENGINE}" \
   --elb-type "${ELB_TYPE}" \
-  --platform "${PLATFORM}"
+  --platform "${PLATFORM}" 
+  
  
 eb setenv SERVER_PORT=5000 \
   SPRING_DATASOURCE_USERNAME="${DATABASE_USERNAME}" \
