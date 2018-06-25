@@ -14,5 +14,6 @@ project root directory.  This is not necessary, however, as the jar is already g
 To deploy the app, perform the following:
 1. in `properties.sh`, change the values of `ACCOUNTID` and `KEYNAME` to the AWS account number and the key name for that
 account to be used to interact via the Elastic Beanstalk CLI.  
-2. generate an RSA ssh keypair with the same name as `KEYNAME` to be used to interact with AWS
-3. from the project root directory, execute `bash eb-create.sh` to create the EC2 stack and deploy the Spring Boot application jar to the generated infrastructure
+2. generate a local RSA ssh keypair with the same name as `KEYNAME` to be used to interact with AWS
+3. replace the value `  default_ec2_keyname: AKIAJ74PSHZK4GJOFHDA` in `.elasticbeanstalk/config.yml` with the new value for `KEYNAME`
+4. from the project root directory, execute `bash eb-create.sh` to create the EC2 stack and deploy the Spring Boot application jar to the generated infrastructure
